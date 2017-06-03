@@ -1,0 +1,77 @@
+#lines{
+  overflow: visible;
+  padding: 20px;
+  padding-left:0;
+	overflow: visible;
+	@media(min-width: $sm){
+		padding: 50px;
+	}
+}
+
+.line-1 {
+  animation-name: waveyy;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  transform-origin: 50% 50% 0;
+  will-change: transform;
+}
+
+.line-2 {
+  animation-name: waveyy;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50% 0;
+  will-change: transform;
+}
+.line-3 {
+  animation-name: max-waveyy;
+  animation-direction: reverse;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50% 0;
+  animation-delay:2s;
+  will-change: transform;
+}
+.line-4 {
+  animation-name: max-waveyy;
+  animation-direction: reverse;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50% 0;
+  will-change: transform;
+}
+.line-5 {
+  animation-name: waveyy;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-origin: 50% 50% 0;
+  animation-delay: 0.5s;
+  will-change: transform;
+}
+@keyframes waveyy {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}
+@keyframes max-waveyy {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  100% {
+    transform: rotate(0deg)
+  }
+}

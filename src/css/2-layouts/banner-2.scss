@@ -1,0 +1,335 @@
+* {
+	box-sizing: border-box;
+}
+.banner-2 {	
+	background-image: linear-gradient(72deg, $dark-brown-1, $dark-brown-2);
+	background-position: center;
+	background-size: cover;
+	// @include grid-container;
+	@media(min-width: $sm) { 
+		display: flex;
+	}
+}
+
+.banner-2-container {
+	display: flex;
+	width: 100%;
+}
+.banner-2-contents {
+	width: 100%;
+	margin:auto;
+	height: auto;
+	@media(min-width: $sm) { 
+		display: flex;
+	}
+}
+
+.banner-2-content-block {
+  color: #fff;
+  text-align: center;
+  padding-top:0px;
+  // display: flex;
+  @media(min-width: $sm){
+    @include column(6/12); 
+    text-align: left;
+    padding-top: 0px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    align-items: center;
+    -ms-flex-align:center;
+  }
+  @media(min-width: $md){ 
+    padding-top: 0px;
+  }
+  p {
+    margin-top:30px;
+    @media(min-width: $md){ 
+      width: 450px;
+    }
+  }
+}
+.banner-2-inner-block {
+  margin: auto;
+  margin-left: 0;
+  &__header span {
+    display: block;
+  }
+}
+.image-block {
+	// padding-top: 40px;
+	width: 280px;
+	float: none;
+	margin:auto;
+	@media(min-width: $sm){ 
+		padding-top: 0px;
+		@include column(5/12, 1/12);
+		vertical-align: top;
+		width: 320px;
+
+	}
+	@media(min-width: $md){ 
+		@include column(5/12, 0.5/12);
+		// width: 400px;
+	}
+	img {
+		max-width: 100%;
+
+	}
+}
+
+.items {
+  display: flex;
+  position: absolute;
+  justify-content:  space-between;
+/*   align-items: center; */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  &__inner {
+    position: relative;
+    width: 100%;
+    background: #fff;
+  }
+  &__layer &__item {
+    // position: absolute;
+    // box-shadow: 0 32px 40px -20px rgba(0,0,0,.25);
+    &:after {
+      content: attr(data-title);
+      position: absolute;
+      line-height: 20px;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all .5s ease;
+      visibility: hidden;
+      opacity: 0;
+    }
+    // &:hover {
+    //   &:after {
+    //     visibility: visible;
+    //     opacity: 1;
+    //   }
+    // }
+  }
+}
+.layer-1 {
+  left: inherit !important;
+  position: absolute;
+  top:10px !important;
+  left: 140px !important;
+/*   border: dashed red; */
+  width: 120px;
+  height: 120px;
+  
+}
+.layer-2 {
+  left: inherit !important;
+  position: absolute;
+  top: 260px !important;
+  left: 10px !important;
+/*   bottom: 140px; */
+/*   border: dashed purple; */
+  width: 80px;
+  height: 80px;
+  
+}
+.layer-3 {
+  left: inherit !important;
+  position: absolute;
+  top: initial !important;
+  right: 220px !important;
+  bottom: 60px;
+/*   border: dashed brown; */
+  width: 120px;
+  height: 120px;
+  
+}
+.layer-4 {
+  left: inherit !important;
+  position: absolute;
+  top: 20px !important;
+  right: 20px !important;
+  // border: dashed purple;
+  width: 210px;
+  height: 210px;
+}
+.layer-5 {
+  left: 180px !important;
+  position: absolute;
+  top: initial !important;
+  bottom: -20px !important;
+/*   border: dashed purple; */
+  width: 210px;
+  height: 210px;
+}
+.layer-6 {
+  left: 500px !important;
+  position: absolute;
+  top: 80px !important;
+/*   border: dashed black; */
+  width: 110px;
+  height: 110px;
+}
+.layer-7 {
+  left: initial !important;
+  right: 420px !important;
+  position: absolute;
+  top: 280px !important;
+/*   border: solid black; */
+  width: 50px;
+  height: 50px;
+}
+.layer-8 {
+  left: initial !important;
+  right: 620px !important;
+  position: absolute;
+  top: initial !important;
+  bottom: 200px;
+/*   border: solid aqua; */
+  width: 50px;
+  height: 50px;
+}
+.layer-9 {
+  left: initial !important;
+  right: 670px !important;
+  position: absolute;display: block;
+  top: initial !important;
+  bottom: 150px;
+/*   border: solid aqua; */
+  width: 90px;
+  height: 90px;
+}
+img {
+  max-width: 100%
+}
+.items_inner {
+  width: 100%;
+/*   border: solid yellow */
+}
+.img-2 {
+  transform: rotate(-120deg);
+}
+
+.img-3 {
+  transform: rotate(80deg);
+}
+.img-1 {
+  transform: rotate(-90deg);
+}
+.img-5 {
+  transform: rotate(180deg)
+}
+.img-6  {
+  transform: rotate(-75deg)
+}
+.img-7 {
+  transform: rotate(30deg)
+}
+.img-8 {
+  transform: rotate(120deg)
+}
+.img-9 {
+	transform: rotate(130deg)
+}
+
+$cube-size: 35px;
+$color-front-back: #ea5f34;
+$color-right-left: #f49376;
+$color-top-bottom: #f87d52;
+
+// this is purely for layout purposes
+// .l-container {
+//   height: 100%;
+//   //left: 0;
+//   position: absolute;
+//   //top: 0;
+//   width: 50%;
+// }
+
+// .l-container--sparta {
+//   //left: auto;
+//   //right: 0;
+// }
+
+// .c-cube {
+//   animation: spin-cube-left 1s cubic-bezier( .215, .610, .355, 1.000 ) infinite;
+//   //left: 50%;
+//   // margin-left: - $cube-size / 2;
+//   // margin-top: - $cube-size / 2;
+//   position: absolute;
+//   //top: 50%;
+//   transform: rotateX( -33.5deg ) rotateY( 45deg );
+//   transform-origin: $cube-size / 2 $cube-size / 2;
+//   transform-style: preserve-3d;
+// }
+
+// .c-cube--spin-right {
+//   animation-name: spin-cube-right;
+// }
+
+// .c-cube__side {
+//   height: $cube-size;
+//   position: absolute;
+//   width: $cube-size;
+// }
+
+// .c-cube__side--front,
+// .c-cube__side--back {
+//   background: $color-front-back;
+// }
+
+// .c-cube__side--right,
+// .c-cube__side--left {
+//   background: $color-right-left;
+// }
+
+// .c-cube__side--top,
+// .c-cube__side--bottom {
+//   background: $color-top-bottom;
+// }
+
+// .c-cube__side--front {
+//   transform: translateZ( $cube-size / 2 );
+// }
+
+// .c-cube__side--back {
+//   transform: rotateX( -180deg ) translateZ( $cube-size / 2 );
+// }
+
+// .c-cube__side--right {
+//   transform: rotateY( 90deg ) translateZ( $cube-size / 2 );
+// }
+
+// .c-cube__side--left {
+//   transform: rotateY( -90deg ) translateZ( $cube-size / 2 );
+// }
+
+// .c-cube__side--top {
+//   transform: rotateX( 90deg ) translateZ( $cube-size / 2 );
+// }
+
+// .c-cube__side--bottom {
+//   transform: rotateX( -90deg ) translateZ( $cube-size / 2 );
+// }
+
+// @keyframes spin-cube-left {
+//   0% {
+//     transform: rotateX( -33.5deg ) rotateY( 45deg );
+//   }
+//   100% {
+//     transform: rotateX( -33.5deg ) rotateY( -135deg );
+//   }
+// }
+
+// @keyframes spin-cube-right {
+//   0% {
+//     transform: rotateX( -33.5deg ) rotateY( 45deg );
+//   }
+//   100% {
+//     transform: rotateX( -33.5deg ) rotateY( 225deg );
+//   }
+// }

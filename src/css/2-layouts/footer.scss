@@ -1,0 +1,233 @@
+.footer {
+	// background-color: $orange;
+	background-image: linear-gradient(-48deg, #19120c, #1b0d01, #110b07); //url("../img/background/mix-pattern.png"); 
+	@media(min-width: $sm) {
+		height: 60vh;
+	}
+}
+.footer-items {
+	@media(min-width: $sm) {
+		height: 60vh;
+	}
+}
+.footer-container {
+	@include span(1);
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom:15px;
+	@media(min-width: $sm) {
+		margin-top: 50px;
+		margin-bottom: 25px;
+	}
+	@media(min-width: $md) {
+		margin-top: 40px;
+	}
+	@media(min-width: $lg) {
+		margin-top: 55px;
+	}
+	@media(min-width: $xl) {
+		margin-top: 75px;
+	}
+}
+.company-details {
+	@include span(1);
+	// border:solid;
+	// margin-top: 40px;
+	@media(min-width: $sm) {
+		@include span(8/12, 2/12);
+		// margin-top: 60px;
+	}
+	@media(min-width: $md) {
+		// margin-top:90px;
+	}
+}
+.footer-heading {
+	font-size: 26px;
+	font-family: $ws-semibold;
+	// @include span(9/12, 1.5/12);
+	h1 {
+		@media(min-width: $sm) {
+			font-size: 20px;
+			display: inline;
+		}
+		@media(min-width: $md) {
+			font-size: 30px;
+		}
+	}
+
+}
+.brief-text {
+	&--details {
+		margin-top:18px;
+		font-family: $ws-regular;
+		@media(min-width: $sm) {
+			margin-top: 2px;
+		}
+		@media(min-width: 580px) {
+			@include span(10/12, 1/12);
+		}
+		@media(min-width: $md) {
+			margin-top: 5px;
+		}
+		@media(min-width: $lg) {
+			margin-top: 10px;
+		}
+		@media(min-width: $xl) {
+			margin-top: 15px;
+		}
+	}
+
+}
+// .footer-email-container {
+// 	img {
+// 		width: 17px;
+// 	}
+// }
+.contact-icons {
+	@include span(8/12, 2/12);
+	padding-top:33px;
+	@media(min-width: $sm) {
+		@include span(1);
+		padding-top: 35px;
+		// @include span(6/12, 3/12);
+	}
+	@media(min-width: $md) {
+		padding-top: 25px;
+	}
+	@media(min-width: $lg) {
+		padding-top: 50px;
+	}
+	.contact-info {
+		display: block;
+		&--phone {
+			margin-top: 25px;
+			@media(min-width: $sm) {
+				margin-left: 60px;
+				margin-top:0;
+			}
+		}
+		@media(min-width: $sm) {
+
+			display: inline-block;
+		}
+	}
+}
+.contact-icon {
+	//width: 17px;
+	margin-right: 18px;
+	color: $yellow;
+	vertical-align:middle;
+}
+.footer-email {
+	margin-bottom: 25px;
+}
+.address-column {
+	margin-top:35px;
+	@include span(1);
+	@media(min-width: $sm) {
+		margin-top:44px;
+	}
+	@media(min-width: 580px) {
+		@include span(10/12, 1/12)
+	}
+	@media(min-width: $md) {
+		margin-top: 35px;
+	}
+	@media(min-width: $lg) {
+		margin-top: 40px;
+	}
+}
+.address-block {
+
+	@include span(6/12);
+
+	&--0 {
+		border-right: solid 1px #31261b;
+		@media(min-width: $sm) {
+			// @include span(7/12, 2.5/12);
+			text-align: left;
+		}
+		@media(min-width: $sm) {
+			// @include span(4/12, 2/12);
+			text-align: left;
+		}
+	}
+	&--1 {
+	 	@include span(5/12, 1/12);
+		text-align: left;
+		@media(min-width: $sm) {
+			@include span(4.5/12, 1.5/12);
+			text-align: left;
+		}
+		@media(min-width: $sm) {
+			@include span(4/12, 2/12);
+			text-align: left;
+		}
+	}
+	text-align: left;
+}
+.social-media-row {
+	@include span(1);
+	margin-top: 40px;
+	@media(min-width: $sm) {
+		@include span(8/12, 2/12);
+		margin-top: 90px;
+	}
+	@media(min-width: $md) {
+		margin-top: 50px;
+	}
+	@media(min-width: $lg) {
+		margin-top: 65px;
+	}
+	@media(min-width: $xl) {
+		margin-top: 80px;
+	}
+}
+.social-media-block {
+	@include span(1)
+}
+.social-icons-block {
+	// margin: 30px ;
+	// @include span(4/12, 4/12);
+	color: red;
+	width: auto;
+
+	@media(min-width: $sm) {
+		@include span(6/12);
+		text-align: left;
+	}
+}
+.social-icon {
+	color: $gray;
+	&--g-plus {
+		margin: 0 25px;
+	}
+	&:hover {
+		color: $gray;
+	}
+	&:visited {
+		color: $gray;
+	}
+}
+.copyright {
+	@include span(1);
+	@media(min-width: $sm) {
+		@include span(6/12);
+		text-align: right;
+	}
+
+	&__text{
+		margin-top: 20px;
+		@media(min-width: $sm) {
+			margin-top:0;
+		}
+	}
+}
+.heading-new-line {
+	display: block;
+	// @include fonts(bold, 26px, 36px, 50px, uppercase, $ws-bold);
+	@include gradient-text(left, $yellow, $orange);
+	@media(min-width: $sm) {
+		display: inline-block;
+	}
+}

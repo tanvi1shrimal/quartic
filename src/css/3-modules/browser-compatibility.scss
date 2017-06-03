@@ -1,0 +1,36 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+
+	.slider-content .image-content{
+		display: block;
+	}
+
+	.content-wrapper__header, .banner-2-content-block__header, .about-slider-content__header, .slider-content__header, .initial-screen__header, .heading-line-1, .description-text--heading{
+		color: $orange;
+		background: none;
+
+		.heading-new-line{
+			background: none;
+		}
+	}
+
+	//For approach section
+	.about-image-block{
+		position: relative;
+	}
+
+	.about-anim-image{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	//For About section
+	.about-slider-indicator .individual-indicators{
+		display: block;
+
+
+		.about-active-indicator{
+			top: 10px;
+		}
+	}
+}

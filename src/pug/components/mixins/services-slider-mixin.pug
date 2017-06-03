@@ -1,0 +1,17 @@
+mixin services_slider(slider_no, slider_title, slider_description, slider_img)
+	li.slider-content
+		.text-content-slider
+			.slider-heading-wrapper
+				span.list-count.slider-content__count= slider_no
+				h5.slider-content__header= slider_title
+			p.description-text.slider-content__description!= slider_description
+		.image-content
+			img.slider-content__img(src="img/slider-img/"+slider_img)
+
+mixin indicator_dots(slider_name, slider_no)
+	li.indicator-dot
+		span.indicator-text.slider-no-indicator
+			span.slider-no= slider_no
+			| /6
+		a.clickable-indicator-dots(href="#")
+			span.indicator-text.indicator-dot__text= slider_name

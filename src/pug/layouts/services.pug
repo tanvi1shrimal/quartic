@@ -1,0 +1,26 @@
+section.section-area.services-section#services(data-bg="black-nav")
+	.section-container.section-container--services
+		.services-slider-container
+				ul.slider-content-list
+					include ../components/mixins/services-slider-mixin.pug
+					+services_slider("01", "CONNECT", "The first step in unlocking the stranded intelligence in industry is to bring silos of data together and give it context. Using the latest semantic data representation techniques, we combine real time plant operations and asset condition data, CMMS, ERP and plant historian data with reliability process (RCM) output like FMEA’s.", "1.png")
+
+					+services_slider("02", "SELF-SERVICE CONTEXTUAL ANALYTICS And VISUALIZATION", "Getting to know your data is critical to developing successful machine learning algorithms. Flexible and powerful visual analytics, when applied to contextual data, allow industrial users to extract actionable insights and in parallel, perform the most critical aspect of machine learning – feature engineering!", "2.png")
+
+					+services_slider("03", "Machine Learning", "Machine Learning is valuable only when combined with domain knowledge that resides with people in plants. Our industrial Machine Learning User Interface allows you to add domain expertise with no need for programming. Optimized models run in the cloud or continuously learn at the edge – in your plant!", "3.png")
+
+					+services_slider("04", "Anomaly Detection & Prognostics", "Pattern recognition of normal behavior combined with failure modes allows detection of anomalies. Abnormal behavior is alerted using plain language describing the anomaly!", "4.png")
+
+					+services_slider("05", "Augmented Operations & Maintenance", "While equipment failure, throughput and quality predictions are the ultimate deliverable of Machine Learning and Deep Learning algorithms, output from contextual data analytics also deliver augmented intelligence. Maintenance activities are backed by insights and existing Operation Management Systems can be made smarter with guided operations. <b>Operator Driven Reliability (ODR) - delivered with ease!</b>", "5.png")
+
+					+services_slider("06", "Prediction & Prognostics", "Trained and optimized Machine Learning models provide prediction for quality and throughput projections and allow you to perform <b>prescriptive maintenance</b>. Predictions are provided through secure messaging from the cloud or through <b>Edge computing platform</b> in your plant, where models continuously learn and perform better over time.", "6.png")
+
+	.slider-indicators-container
+		span.service-slider-indicator
+		ul.slider-indicators
+			+indicator_dots("Connect", "1")
+			+indicator_dots("SELF-SERVICE CONTEXTUAL ANALYTICS And VISUALIZATION", "2")
+			+indicator_dots("Machine Learning", "3")
+			+indicator_dots("Anomaly Detection & Prognostics", "4")
+			+indicator_dots("Augmented Operations & Maintenance", "5")
+			+indicator_dots("Prediction & Prognostics", "6")

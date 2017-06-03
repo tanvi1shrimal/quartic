@@ -1,0 +1,351 @@
+
+// .one-above-all {
+//   margin-top: 30px;
+// }
+.main-svg-cont {
+	width: 70%;
+	margin: auto;
+  position: relative;
+  top: -60px;
+  opacity:0;
+  transition: opacity 2s ease-out
+}
+
+p {
+	font-family: "Avenir", "Gill Sans", "Futura", "Helvetica Neue", sans-serif;
+	font-size: 1.5em;
+  font-weight: 100;
+	margin: 0;
+	padding: 0;
+}
+
+blockquote {
+	width: 30em;
+	text-indent: -0.5em;
+	line-height: 2.5em;
+}
+
+p cite {
+	margin: 0 0 0 12em;
+	padding: 0;
+	font-size: .7em;
+
+}
+#opacityy, #brain-overlay {
+  transition: opacity 0.5s ease;
+  opacity:0;
+}
+#background {
+  opacity: 1 
+}
+.addOpacity {
+  opacity:1
+}
+.items {
+  // width: 50%;
+  // margin: auto;
+/*   border: solid red; */
+}
+#item-1 {
+  width: 20px;
+/*   border:dashed; */
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+#item-2 {
+  width: 30px;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 1.4s ease;
+}
+#item-3 {
+  width: 60px;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+#item-4 {
+  width: 40px;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+#item-5 {
+  width: 3%;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 1.6s ease;
+}
+#item-6 {
+/*   border:solid; */
+  width: 18%;
+  transform: translateY(-150px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.appear {
+  opacity: 1;
+  transform: translateY(10px);
+}
+.appear-1 {transition: all 1s ease;
+  opacity: 1;
+  //transform: translateY(35px) !important;
+}
+.appear-2 {transition: all 1s ease;
+  opacity: 1;
+  //transform: translateY(25px) !important;
+}
+.appear-3 {transition: all 1s ease;
+  opacity: 1;
+  //transform: translateY(20px) !important;
+}
+.appear-4 {transition: all 1s ease;
+  opacity: 1;
+  //transform: translateY(20px) !important;
+}
+.appear-5 {transition: all 1s ease;
+  opacity: 1;
+  //transform: translateY(20px) !important;
+}
+.appear-6 {transition: all 1s ease;
+  opacity: 1;
+  //transform: translateY(20px) !important;
+}
+
+// #Layer_2 {
+//   width: 20%;
+// }
+/* #Layer_1 {
+  margin-top: 20px;
+  width: 10%;
+} */
+.falling-group{
+  transform: translateY(40px);
+/*   border:solid; */
+  //width: 40%;
+  //height: 200px;
+  //margin:auto;
+  position: relative;
+  //text-align: center;
+  overflow: hidden;
+  //z-index: 40;
+  //opacity: 1 !important;
+  // border:solid;
+}
+#Layer_1 {
+  opacity:0;
+  position: absolute;
+  // left: 80px;
+  // width: 5px;
+  top:0;
+  
+/*   height: 200px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 17px;
+  // }
+}
+#Layer_2 {
+  opacity:0;
+  position: absolute;
+  // left:20px;
+  // width: 8px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 1.255s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 25px;
+  // }
+}
+#Layer_3 {
+  opacity:0;
+  position: absolute;
+  // left:30px;
+  // width: 10px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 1.8s;
+  animation-delay: 0.30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 10px;
+  // }
+}
+#Layer_4 {
+  opacity:0;
+/*   border:dashed; */
+  position: absolute;
+  // left:130px;
+  // width: 4px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 30px;
+  // }
+}
+#Layer_5 {
+  opacity:0;
+/*   border:solid; */
+  position: absolute;
+  // left:110px;
+  // width: 3px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 12px;
+  // }
+}
+#Layer_6 {
+  opacity:0;
+  position: absolute;
+  // left:55px;
+  // width: 12px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 40px;
+  // }
+}
+#Layer_7 {
+  opacity:0;
+/*   border:solid; */
+  position: absolute;
+  // left:35px;
+  // width: 15px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 1.45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 32px;
+  // }
+}
+#Layer_8 {
+  opacity:0;
+/*   border:solid; */
+  position: absolute;
+  // left:55px;
+  // width: 18px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 40px;
+  // }
+}
+#Layer_9 {
+  opacity:0;
+/*   border:solid; */
+  position: absolute;
+  // left:55px;
+  // width: 18px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 40px;
+  // }
+}
+#Layer_10 {
+  opacity:0;
+/*   border:solid; */
+  position: absolute;
+  // left:55px;
+  // width: 18px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 40px;
+  // }
+}
+#Layer_11 {
+  opacity:0;
+/*   border:solid; */
+  position: absolute;
+  // left:55px;
+  // width: 18px;
+  top:0;
+/*   height: 100px; */
+/*   background: red; */
+/*   animation-name: fall; */
+  animation-duration: 2.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  // @media(min-width: $sm){ 
+  //   width: 40px;
+  // }
+}
+@keyframes fall {
+  0% {
+    transform:translateY(-50px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity:0;
+    bottom:0;
+    top:120%;
+    transform:translateY(100%);
+  }
+}
+.bottom-group {
+  //opacity:0
+}
+.bottom-group-1 {
+  opacity:0;
+  transform: translateY(-70px);
+  transition: all 1s ease-in;
+}
+.bottom-group-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

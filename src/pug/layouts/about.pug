@@ -1,0 +1,67 @@
+section.section-area.about#about(data-bg="white-nav")
+	// parallax bacground
+	.items
+		.js-scene.items_inner
+			// first image
+			.items__layer.layer.layer-1(data-depth='1.35')
+				.items__item(data-title='no.2 item-1')
+					img.items__item.img-1(src='img/particles/Triangle_Normal.png')
+			// second image
+			.items__layer.layer.layer-2(data-depth='0.70')
+				.items__item(data-title='no.2 item-2')
+					img.items__item.img-2(src='img/particles/orange/Triangle_Normal.png')
+			// third image
+			.items__layer.layer.layer-3(data-depth='2.65')
+				.items__item(data-title='no.3 item-3')
+					img.items__item.img-3(src='img/particles/orange/Triangle_Filled.png')
+			// fourth image
+			.items__layer.layer.layer-4(data-depth='1.20')
+				.items__item(data-title='no.4 item-4')
+					img.items__item.img-4(src='img/particles/orange/Triangle_Normal.png')
+			// fifth image
+			.items__layer.layer.layer-5(data-depth='0.65')
+				.items__item(data-title='no.3 item-3')
+					img.items__item.img-5(src='img/particles/orange/Triangle_Normal.png')
+			// sixth image
+			.items__layer.layer.layer-6(data-depth='1.85')
+				.items__item(data-title='no.3 item-6')
+					img.items__item.img-6(src='img/particles/orange/Triangle_Filled.png')
+			// seventh image
+			.items__layer.layer.layer-7(data-depth='0.05')
+				.items__item(data-title='no.3 item-7')
+					img.items__item.img-7(src='img/particles/orange/Triangle_Filled.png')
+			//- // eight image
+			//- .items__layer.layer.layer-8(data-depth='0.25')
+			//- 	.items__item(data-title='no.3 item-8')
+			//- 		img.items__item.img-8(src='img/particles/orange/Triangle_Normal.png')
+			// ninth image
+			.items__layer.layer.layer-9(data-depth='1.75')
+				.items__item(data-title='no.3 item-9')
+					img.items__item.img-9(src='img/particles/orange/Triangle_Filled.png')
+	.section-container.section-container--about
+		.about-container
+			.about-slider-block
+				.small-header.about-slider-header why QUARTIC.AI?
+				.about-slider
+					ul.about-slider-content
+						include ../components/mixins/about-slider-mixin.pug
+						+about-slider("0", "Industrial Machine Learning", "For Plant Personnel, not data scientists. <br>By combining Machine Learning and Pattern Recognition with established processes like Reliability Centered Maintenance <b>(RCM)</b> and <b>Operator Driven Reliability</b> (ODR), the Deming® Industrial Artificial Intelligence platform from Quartic.ai allows plant personnel to apply data science in their domain language.")
+						include ../components/mixins/about-slider-mixin.pug
+						+about-slider("1","Industrial Operations and Reliability Experience","<b>Designed by industrial automation and reliability veterans</b>, Quartic.ai delivers prescriptive maintenance, insight guided operators and real-time industrial analytics for a Reliability Centered Operation using industrial language user interfaces that enable and empower plant personnel!")
+						include ../components/mixins/about-slider-mixin.pug
+						+about-slider("2", "Leverage your existing investments", "Leverage your existing investments in data from automation, asset management and ERP systems to liberate the stranded intelligence for Smarter Operations – just add Quartic.ai!")
+					div.about-slider-indicator
+						//- a(href="#")
+						span.slider-arrow.arrow-prev.icon-arrow-left
+							//(src="img/background/arrow-left.png")
+						//<button type="button" class="slick-prev">Previous</button>
+						ul.individual-indicators
+							span.about-active-indicator
+							li#1.slide
+							li#2.slide
+							li#3.slide
+						// a(href="#")
+						span.slider-arrow.arrow-next.icon-arrow-right
+			.about-image-block
+				//img.about-anim-image(src="img/gifs/conveyer23.gif")
+				img.about-anim-image(src="img/illustrations/conveyor-svg.svg")

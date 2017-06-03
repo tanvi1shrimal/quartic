@@ -1,0 +1,57 @@
+{
+  "name": "quartic.ai",
+  "authors": [
+    "Priya <priyat@lollypop.biz>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "slick-carousel": "slick.js#^1.6.0",
+    "normalize-css": "normalize.css#^5.0.0",
+    "parallax.js": "^1.4.2"
+  },
+  "install": {
+    "path": {
+      "css": "src/css",
+      "js": "src/js",
+      "scss": "src/css"
+    },
+    "sources": {
+      "slick-carousel": {
+        "mapping": [
+          {
+            "bower_components/slick-carousel/slick/slick.js": "slick.js"
+          },
+          {
+            "bower_components/slick-carousel/slick/slick.scss": "slick.scss"
+          }
+        ]
+      },
+      "normalize-css": {
+        "mapping": [
+          {
+            "bower_components/normalize-css/normalize.css": "normalize.css"
+          }
+        ]
+      },
+      "jquery": {
+        "mapping": [
+          {
+            "bower_components/jquery/dist/jquery.js": "jquery.js"
+          }
+        ]
+      },
+      "neat": {
+        "mapping": [
+          {
+            "bower_components/neat/core/_neat.scss": "neat.scss"
+          }
+        ]
+      }
+    }
+  }
+}

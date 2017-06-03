@@ -1,0 +1,105 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.banner-2-contents {
+		margin-top: 60px;
+	}
+	.slider-content__img {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	#lines {
+		display: none;
+	}
+	.banner-image-wrapper {
+		width: 350px;
+		height: 400px;
+		background-image: url("../img/illustrations/Triangle-line-pattern.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	#pb {
+		display: none;
+	}
+	.about-image-block {
+		background-image: url("../img/illustrations/industrial-machine-learning.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.about-anim-image {
+		display: none;
+	}
+	.image-block {
+		position: relative;
+	}
+	.one-above-all {
+			width: 280px;
+			height: 320px;
+			background-image: url("../img/illustrations/Illustration_Home-01.png");
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin-top: 60px;
+		@media(min-width: $md) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: 0px;
+			width: 400px;
+			height: 450px;
+		}
+	}
+	.banner-2-inner-block__header {
+		span {
+			color: #f3775a;
+		}
+	}
+	.mobile-view-1, .mobile-view-2 {
+		background: linear-gradient(-58deg, #f79237, #f3775a);
+	}
+	.approach-content-list .slick-prev {
+		display: none !important;
+	}
+	.approach-slider {
+		font-size: 30px;
+		right: 0 !important;
+	}
+}
+/* Mozilla fixes ======================================================================= */
+@-moz-document url-prefix() { 
+	.about-image-block {
+		@media(min-width: $md) {
+			background-image: url("../img/illustrations/industrial-machine-learning.png");
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+	}
+	.about-anim-image {
+		visibility: hidden;
+	}
+	#pb {
+	 display: none;
+	}
+	.image-block {
+		width: 280px;
+	}
+	.one-above-all {
+			width: 280px;
+			height: 320px;
+			background-image: url("../img/illustrations/Illustration_Home-01.png");
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			margin-top: 60px;
+		@media(min-width: $md) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: 0px;
+			width: 400px;
+			height: 450px;
+		}
+	}
+}

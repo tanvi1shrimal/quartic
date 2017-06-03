@@ -1,0 +1,86 @@
+mixin svg_line
+	line.shape-brief-text__text-line(x1="40" y1="12" x2="60" y2="12")
+
+ul.approach-indicators-list
+	//Square shape
+	li.approach-indicators
+		.icon-label-wrapper
+			svg.approach-indicators-icon.approach-indicators-icon--rect
+				g.svg-shape-group
+					rect.approach-indicators-icon__shape.approach-indicators-icon__shape--rhombus(x="4" y="5" fill="url(#bg-fill)" height="14" width="14")
+					defs
+						linearGradient(id="bg-fill" x="4" y="5")
+							stop(offset="0" style="stop-color:#F79237")
+							stop(offset="1" style="stop-color:#F3775A")
+						clipPath#rhombus-view
+							rect.approach-indicators-icon__shape.approach-indicators-icon__shape--rhombus(x="4" y="5")
+					image.pattern-img(xlink:href="img/approach/dot_pattern.svg" clip-path="url(#rhombus-view)")
+				g.shape-brief-text
+					+svg_line
+					text.nav-link-text.nav-link-text--caps.shape-brief-text__label(x="80" y="15") built by industrial users
+			span.small-header.icon-label-wrapper__label.approach-label(data-label="built by industrial users") built by industrial users
+			//span.nav-link-text.nav-link-text--caps.icon-label-wrapper__small-label built by industrial users
+	//END: Square shape
+
+	//Hexagone shape
+	li.approach-indicators
+		.icon-label-wrapper
+			svg.approach-indicators-icon
+				g.svg-shape-group
+					polygon.approach-indicators-icon__shape(points="9.927,0.64 17.98,5.3 17.98,14.58 9.927,19.22 1.9,14.58 1.9,5.3")
+
+					defs
+						linearGradient(id="bg-fill" x="4" y="5")
+							stop(offset="0" style="stop-color:#F79237")
+							stop(offset="1" style="stop-color:#F3775A")
+						clipPath#hexagone-view
+							polygon.approach-indicators-icon__shape(points="9.927,0.64 17.98,5.3 17.98,14.58 9.927,19.22 1.9,14.58 1.9,5.3")
+					image.pattern-img(xlink:href="img/approach/dot_pattern.svg" clip-path="url(#hexagone-view)")
+				g.shape-brief-text
+					+svg_line
+					text.nav-link-text.nav-link-text--caps.shape-brief-text__label(x="80" y="15") practical application
+			span.small-header.icon-label-wrapper__label.approach-label(data-label="practical application") practical application
+			//span.nav-link-text.nav-link-text--caps.icon-label-wrapper__small-label practical application
+	//END: Hexagone shape
+
+	//END: Circle shape
+	li.approach-indicators
+		.icon-label-wrapper
+			svg.approach-indicators-icon
+				g.svg-shape-group
+					circle.approach-indicators-icon__shape(cx="10" cy="10" r="9")
+
+					defs
+						linearGradient(id="bg-fill" x="4" y="5")
+							stop(offset="0" style="stop-color:#F79237")
+							stop(offset="1" style="stop-color:#F3775A")
+						clipPath#circle-view
+							circle.approach-indicators-icon__shape(cx="10" cy="10" r="8")
+					image.pattern-img(xlink:href="img/approach/dot_pattern.svg" clip-path="url(#circle-view)")
+				g.shape-brief-text
+					+svg_line
+					text.nav-link-text.nav-link-text--caps.shape-brief-text__label(x="80" y="15") Humans in the loop
+			span.small-header.icon-label-wrapper__label.approach-label(data-label="Humans in the loop") Humans in the loop
+	//END: Circle shape
+
+	//Triangle shape
+	li.approach-indicators
+		.icon-label-wrapper
+			svg.approach-indicators-icon
+				g.svg-shape-group
+					polygon.approach-indicators-icon__shape(points="1.1,17.02 9.919,1.74 18.75,17.12")
+
+					defs
+						linearGradient(id="bg-fill" x="4" y="5")
+							stop(offset="0" style="stop-color:#F79237")
+							stop(offset="1" style="stop-color:#F3775A")
+						clipPath#triangle-view
+							polygon.approach-indicators-icon__shape(points="1.1,17.02 9.919,1.74 18.75,17.12")
+					image.pattern-img(xlink:href="img/approach/dot_pattern.svg" clip-path="url(#triangle-view)")
+				g.shape-brief-text
+					+svg_line
+					text.nav-link-text.nav-link-text--caps.shape-brief-text__label(x="80" y="15") Augmented Intelligence
+
+			span.small-header.icon-label-wrapper__label.approach-label(data-label="Augmented Intelligence") Augmented Intelligence
+			//span.nav-link-text.nav-link-text--caps.icon-label-wrapper__small-label Augmented Intelligence
+	//END: Triangle shape

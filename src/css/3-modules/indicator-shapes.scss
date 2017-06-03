@@ -1,0 +1,184 @@
+//For indicator shapes
+.approach-indicators-wrapper{
+	margin-top: 20%;
+	@media(min-width: $sm){
+		margin-top: auto;
+		transform: translateY(50%);
+		margin-top: 50px;
+	}
+	@media(min-width: $md){
+		margin-top: 40px;
+	}
+
+	&.animate-indicators{
+		@include span(3/12);
+
+		@media(min-width: $sm){
+			@include span(6/12, 0.5/12);
+		}
+
+		@media(min-width: $md){
+			@include span(4/12, 0.5/12);
+		}
+	}
+
+	.approach-indicators{
+		@include clearfix();
+		left: 0%;
+		margin-top: 30px;
+		transition: 0.4s ease;
+
+		&:first-child{
+			margin-top: 0px;
+		}
+
+		.approach-label{
+			transform: translateX(-20px);
+			opacity: 0;
+			transition: 0.6s ease;
+		}
+
+		.pattern-img{
+			width: 24px;
+			height: 22px;
+			opacity: 0;
+			transition: 0.2s ease;
+		}
+
+		&.translate-position{
+
+			.approach-indicators-icon{
+				transform: translateY(-70px);
+			}
+
+		}
+
+		&.active-shape{
+
+			.approach-label{
+				opacity: 1;
+				transform: translateX(0px);
+			}
+
+			.approach-indicators-icon{
+				pointer-events: none;
+				transform: scale(4.2) translateX(1px);
+
+				&__shape{
+					fill: url(#bg-fill);
+					stroke-width:0;
+					stroke: transparent;
+					transition: 0.02s stroke-width ease, 0.3s fill ease;
+				}
+
+				@media(min-width: $sm){
+					transform: scale(13.2) translateX(1px);
+				}
+			}
+
+			.pattern-img{
+				opacity: 1;
+			}
+
+			.shape-brief-text{
+				display: none;
+//				opacity: 0;
+//				visibility: hidden;
+//				transform: translateX(-10px) scale(0);
+			}
+		}
+
+		&-icon{
+			@include span(0.8/3, 0.05/3);
+			overflow: visible;
+			width: 22px;
+			height: 20px;
+			transform: scale(1) translateX(0);
+			transform-origin: bottom;
+			transition: 0.2s ease;
+
+			@media(min-width: $sm){
+				@include span(2/6, 0.3/6);
+				width: 22px;
+				height: 20px;
+				transform: scale(1) translateX(0);
+				transform-origin: bottom;
+			}
+
+			@media(min-width: $md){
+				cursor: pointer;
+			}
+
+			&--rect{
+				height: 22px;
+			}
+
+			rect{
+				$size: 14px;
+				width: $size;
+				height: $size;
+				transform-origin: center;
+				transform: rotate(45deg) translateX(-1px);
+			}
+
+			.approach-indicators-icon__shape{
+				fill: transparent;
+				stroke:$gray;
+				stroke-width:1;
+				stroke-miterlimit:10;
+				transition: 0.01s 0.02s stroke-width ease, 0.3s fill ease;
+			}
+
+			&:hover{
+				@media(min-width: $sm){
+					.approach-indicators-icon__shape{
+						fill: $orange;
+						stroke: $orange;
+						transition: 0.3s ease;
+					}
+
+					.shape-brief-text{
+						opacity: 1;
+						visibility: visible;
+						transform: translateX(0px);
+					}
+				}
+			}
+		}
+	}
+}
+.approach-content-list {
+	.slick-prev[style] {
+		display: none !important;
+	}
+	.approach-slider-arrow {
+		position: absolute;
+		top: 120%;
+		font-size: 12px;
+		transition: all 0.5s ease;
+		color: #333;
+		border: solid 1px;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    cursor: pointer;
+	    &:hover {
+	    	@media(min-width: $sm) {
+	    		background: #f3755a;
+				border-color: #f3755a;
+
+	    	}
+		}
+	}
+	.approach-slider-right[style] {
+		right: 0;
+		padding-left: 1px;
+	}
+	.approach-slider-left {
+		right: 30px;
+		padding-right: 1px;
+	}
+}

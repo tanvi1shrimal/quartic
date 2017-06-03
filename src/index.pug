@@ -1,0 +1,28 @@
+doctype html
+
+html(lang= "en")
+	head
+		include pug/base/header.pug
+
+	body
+		include pug/components/loader.pug
+		header
+			.nav-block
+				.container.nav-container
+					.logo-block
+						img.logo-block__img(src="img/logo/logo.svg")
+
+		main
+			include pug/components/side-nav.pug
+			.sections-container
+				include pug/layouts/banner-1.pug
+				include pug/layouts/banner-2.pug
+				include pug/layouts/about.pug
+				include pug/layouts/services.pug
+				include pug/layouts/approach.pug
+				include pug/layouts/worked-with.pug
+
+		footer#footer
+			include pug/layouts/footer.pug
+
+		include pug/base/scripts.pug

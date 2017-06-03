@@ -1,0 +1,217 @@
+@import "base-styles";
+
+/*Different fonts*/
+@font-face {
+    font-family: 'WorkSansBold';
+    src: url('../fonts/worksans-bold.woff2') format('woff2');
+    src: url('../fonts/worksans-bold.woff') format('woff'),
+         url('../fonts/worksans-bold.ttf') format('truetype'),
+         url('../fonts/worksans-bold.svg#WorkSansBold') format('svg'),
+         url('../fonts/worksans-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/worksans-bold.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSansLight';
+    src: url('../fonts/worksans-light.woff2') format('woff2');
+    src: url('../fonts/worksans-light.woff') format('woff'),
+         url('../fonts/worksans-light.ttf') format('truetype'),
+         url('../fonts/worksans-light.svg#WorkSansLight') format('svg'),
+         url('../fonts/worksans-light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/worksans-light.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSansMedium';
+    src: url('../fonts/worksans-medium.woff2') format('woff2');
+    src: url('../fonts/worksans-medium.woff') format('woff'),
+         url('../fonts/worksans-medium.ttf') format('truetype'),
+         url('../fonts/worksans-medium.svg#WorkSansMedium') format('svg'),
+         url('../fonts/worksans-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/worksans-medium.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSansRegular';
+    src: url('../fonts/worksans-regular.woff2') format('woff2');
+    src: url('../fonts/worksans-regular.woff') format('woff'),
+         url('../fonts/worksans-regular.ttf') format('truetype'),
+         url('../fonts/worksans-regular.svg#WorkSansRegular') format('svg'),
+         url('../fonts/worksans-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/worksans-regular.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WorkSansSemibold';
+    src: url('../fonts/worksans-semibold.woff2') format('woff2');
+    src: url('../fonts/worksans-semibold.woff') format('woff'),
+         url('../fonts/worksans-semibold.ttf') format('truetype'),
+         url('../fonts/worksans-semibold.svg#WorkSansSemibold') format('svg'),
+         url('../fonts/worksans-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/worksans-semibold.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$default-fonts: 'Lintel', 'Helvetica', 'Arial', sans-serif;
+$ws-bold: 'WorkSansBold', $default-fonts;
+$ws-light: 'WorkSansLight', $default-fonts;
+$ws-medium: 'WorkSansMedium', $default-fonts;
+$ws-regular: 'WorkSansRegular', $default-fonts;
+$ws-semibold: 'WorkSansSemibold', $default-fonts;
+
+/*------------------Base font styles------------------*/
+
+@mixin fonts($font-wt, $size-xs, $size-sm, $size-md, $case, $f-family){
+	$line-diff: 8px;
+	font-weight: $font-wt;
+	text-transform: $case;
+	font-family: $f-family;
+	font-size: $size-xs;
+	line-height: $size-xs + $line-diff;
+
+	@media(min-width: $sm){
+		font-size: $size-sm;
+		line-height: $size-sm + $line-diff;
+	}
+
+	@media(min-width: $md){
+		$line-diff: 10px;
+		font-size: $size-md;
+		line-height: $size-md + $line-diff;
+	}
+}
+
+@mixin same-font($font-size: 12px, $f-family: $ws-light, $color: $light-gray, $case: capitalize){
+	font-size: $font-size;
+	font-family: $f-family;
+	color: $color;
+	text-transform: $case;
+}
+
+.white-patch{
+	background: white;
+	display: block;
+	text-transform: capitalize;
+	font-weight: bold;
+	padding: 5px 0;
+
+	@media(min-width: $sm){
+		display: inline-block;
+		padding: 5px 10px;
+	}
+
+	&__text{
+		@include gradient-text(left, $yellow, $orange);
+	}
+}
+
+h1{
+	@include fonts(bold, 26px, 36px, 50px, uppercase, $ws-bold);
+	@include gradient-text(left, $yellow, $orange);
+}
+
+h2{
+	@include fonts(bold, 20px, 26px, 36px, uppercase, $ws-bold);
+	@include gradient-text(left, $yellow, $orange);
+
+	&.big-header{
+		@include fonts(bold, 26px, 36px, 50px, uppercase, $ws-bold);
+	}
+}
+
+h3{
+	@include fonts(normal, 20px, 20px, 30px, lowercase, $ws-light);
+	@include gradient-text(left, $yellow, $orange);
+
+	&.bold-text, .bold-text{
+		font-family: $ws-semibold;
+	}
+
+	&.caps{
+		text-transform: uppercase;
+	}
+}
+
+h4{
+	@include fonts(normal, 20px, 20px, 28px, lowercase, $ws-light);
+	@include gradient-text(left, $yellow, $orange);
+
+	&.bold-text, .bold-text{
+		font-family: $ws-semibold;
+	}
+}
+
+h5{
+	@include fonts(bold, 14px, 16px, 18px, uppercase, $ws-bold);
+	@include gradient-text(left, $yellow, $orange);
+}
+
+.small-header{
+	@include fonts(normal, 16px, 16px, 18px, uppercase, $ws-medium);
+	color: $yellow;
+}
+
+.brief-text{
+	@include fonts(normal, 12px, 14px, 16px, initial, $ws-light);
+	color: $light-gray;
+
+	.highlight{
+		font-weight: bold;
+	}
+
+	.yellow-highlight{
+		color: $yellow;
+	}
+}
+
+.description-text{
+	@include fonts(normal, 12px, 12px, 14px, initial, $ws-regular);
+	color: $dark-gray;
+
+	&--heading {
+		@include gradient-text(left, $yellow, $orange);
+	}
+
+	&.md-op{
+		opacity: 0.8;
+	}
+
+	&.low-op{
+		opacity: 0.5;
+	}
+}
+
+.list-count{
+	@include fonts(normal, 60px, 70px, 60px, initial, $ws-semibold);
+	color: $count-gray;
+}
+
+.indicator-text{
+	@include fonts(normal, 12px, 12px, 12px, uppercase, $ws-regular);
+	color: $dark-gray;
+	line-height: 20px !important;
+
+	&.active{
+		color: $orange;
+	}
+}
+
+.nav-link-text{
+	@include fonts(normal, 14px, 20px, 12px, normal, $ws-light);
+	color: $orange;
+
+	&--caps{
+		text-transform: capitalize;
+	}
+}
+
+/*------------------END: Base font styles------------------*/

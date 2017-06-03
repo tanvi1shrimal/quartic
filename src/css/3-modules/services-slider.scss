@@ -1,0 +1,150 @@
+.services-slider-container{
+	height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+	@media(min-width: $md){
+		height: 80%;
+	}
+
+	.slick-initialized .slick-slide{
+		display: flex;
+	}
+
+	.slick-slide img{
+		display: initial;
+	}
+
+	.slider-content-list{
+		@media(min-width: $md){
+			margin-top: 50px;
+		}
+		@media(min-width: $xl){
+			margin-top: 200px;
+		}
+	}
+}
+
+/*------------For slider on services section------------*/
+.slider-content{
+	display: flex;
+    flex-direction: column-reverse;
+	position: relative;
+
+	@media(min-width: $sm){
+		flex-direction: row;
+	}
+
+	//slider header count
+	&__count{
+		position: absolute;
+		bottom: -11px;
+		right: 0;
+		display: flex;
+		line-height: inherit;
+		line-height: 60px;
+
+		@media(min-width: $sm){
+			position: relative;
+			padding: 0;
+			bottom: 0;
+		}
+
+		@media(min-width: $md){
+			line-height: 65px;
+		}
+	}
+
+	//Slider heading
+	&__header{
+		position: relative;
+		padding-bottom: 6px;
+		width: 80%;
+
+		@media(min-width: $sm){
+			width: 100%;
+		}
+
+		&:after{
+			position: absolute;
+			content: "";
+			height: 1px;
+			width: calc(100% - 20px);
+			background: $orange;
+			bottom: 0;
+			left: 0;
+
+			@media(min-width: $sm){
+				width: 100%;
+			}
+		}
+	}
+
+	//Slider description
+	&__description{
+		padding-top: 20px;
+	}
+
+	//header + description wrapper
+	.text-content-slider{
+		padding-top: 40px;
+		position: relative;
+
+		.slider-heading-wrapper{
+			position: relative;
+		}
+
+		@media(min-width: $sm){
+			padding-top: 0px;
+			@include column(4/12, 0.6/12);
+		}
+
+		@media(min-width: $md){
+			@include column(3.2/12, 1.2/12);
+		}
+		@media(min-width: $lg){
+			@include column(3.2/12, 1.5/12);
+		}
+		// @media(min-width: $xl){
+		// 	@include column(3.8/12, 1.5/12);
+		// }
+	}
+
+	//Image wrapper of the slider
+	.image-content{
+		text-align: center;
+
+		@media(min-width: $sm){
+			padding: 0;
+			@include column(6/12, 0.6/12);
+			padding-top: 0;
+			display: flex;
+    		justify-content: center;
+			align-items: center;
+		}
+
+		@media(min-width: $md){
+			@include column(5.5/12, 0.5/12);
+		}
+	}
+
+	//Image of the slider
+	&__img{
+		height: 120px;
+
+		@media(min-width: $sm){
+			margin-top: 100px;
+			max-width: 100%;
+			height: auto;
+			width: auto;
+			//width: 560px;
+		}
+
+		@media(min-width: $md){
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+	}
+}
+/*------------END: For slider on services section------------*/

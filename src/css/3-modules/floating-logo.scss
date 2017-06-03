@@ -1,0 +1,19 @@
+.logo-anim-container{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0.6;
+	transform: rotate(0deg);
+	animation: rotate-e 0.2s ease;
+}
+
+@keyframes rotate-e{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}

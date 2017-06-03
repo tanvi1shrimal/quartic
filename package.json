@@ -1,0 +1,43 @@
+{
+  "name": "quartic.ai",
+  "version": "1.0.0",
+  "description": "This README would document whatever steps are necessary to get your application up and running.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/priya38/quartic.ai.git"
+  },
+  "dependencies": {
+    "browser-sync": "^1.3.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^1.9.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-harp": "0.0.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-pug": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uncss": "^1.0.6",
+    "sass": "^0.5.0",
+    "strip-debug": "^1.1.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/priya38/quartic.ai/issues"
+  },
+  "homepage": "https://gitlab.com/priya38/quartic.ai#README"
+}
